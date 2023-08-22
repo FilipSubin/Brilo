@@ -1,0 +1,103 @@
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -0.5rem;
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: $weight-bold;
+  border-radius: $global-radius;
+  list-style-type: none;
+  text-transform: uppercase;
+  box-shadow: 0 0.1875rem 0.9375rem 0 #00065B1A;
+  z-index: 1;
+
+  &.is-open {
+    display: block;
+  }
+
+  li {
+    width: 15rem;
+    height: 3.5rem;
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $white;
+      padding-inline: 1rem;
+      width: 100%;
+      height: 100%;
+
+      &:hover {
+        background-color: $primary-100;
+      }
+    }
+
+    &:first-child .link {
+      border-radius: $global-radius $global-radius 0 0;
+    }
+  
+    &:last-child .link {
+      border-radius: 0 0 $global-radius $global-radius;
+    }
+  }
+
+  li + li {
+    border-top: 0.0625rem solid $primary-100;
+  }
+}
+
+.submenu--primary {
+  top: 2rem;
+  left: -5rem;
+
+  @media (min-width: 100rem) {
+    left: -0.5rem;
+  }
+}
+
+.submenu--secondary {
+  left: 15.625rem;
+}
+
+.section__links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+
+  @media (min-width: 36rem) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 48rem) {
+    justify-content: start;
+  }
+
+  @media (min-width: 62rem) {
+    margin-top: 4rem;
+    gap: 2rem;
+  }
+}
+
+.card {
+  border: 0;
+  height: 100%;
+  text-align: center;
+
+  h4 {
+    margin-block: 1rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  .button {
+    margin: auto auto 2rem;
+    min-width: auto;
+  }
+}

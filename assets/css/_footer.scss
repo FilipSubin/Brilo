@@ -1,0 +1,25 @@
+
+footer .container {
+  border-top: 0.5rem solid $primary-100;
+}
+
+.footer__content {
+  padding-block: 1.5rem 2.5rem;
+  text-align: center;
+
+  @media (min-width: 62rem) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 80rem;
+    min-height: 10rem;
+    margin-inline: auto;
+    padding-block: 0;
+    padding-inline: 1rem;
+  }
+  
+  @media (min-width: 75rem) {
+    padding-inline: 2rem;
+  }
+}

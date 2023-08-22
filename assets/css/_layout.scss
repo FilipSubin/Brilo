@@ -1,0 +1,27 @@
+.container {
+  max-width: $container-width;
+}
+
+.section {
+  position: relative;
+}
+
+.section--intro {
+  padding-block: $header-height 3.5rem;
+
+  @media (min-width: 48rem) {
+    padding-block: $header-height-desktop 7rem;
+  }
+}
+
+.section--medium {
+  padding-block: 0 3.5rem;
+
+  @media (min-width: 48rem) {
+    padding-block: 7rem;
+  }
+}
+
+.section--bottom {
+  padding-top: 0;
+}

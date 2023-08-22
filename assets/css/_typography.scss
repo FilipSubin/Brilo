@@ -1,0 +1,40 @@
+h1, h2, h3, h4 {
+  font-weight: $weight-bold;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 3.5rem;
+  margin-block: 1rem 0.25rem;
+
+  @media (min-width: 48rem) {
+    margin-block: 0 1.25rem;
+  }
+}
+
+h2 {
+  font-size: clamp(1.625rem, 3vw, 2rem);
+  line-height: 2.5rem;
+  margin-block: 1.5rem 0.75rem;
+
+  @media (min-width: 48rem) {
+    margin-block: 0 1.125rem;
+  }
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+
+h4 {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+}
+
+h3, h4 {
+  line-height: 2rem;
+  margin-bottom: 0.875rem;
+}
+
+p {
+  font-size: clamp(0.875rem, 1.75vw, 1rem);
+}
